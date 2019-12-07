@@ -8,5 +8,7 @@ read -p "Enter the third input: " c
 
 operation1=$(($a+$b*$c))
 operation2=$(($a*$b+$c))
+operation3=$(($c+$a/$b))
 echo "first operation" $operation1
 echo "second operation" $operation2
+echo "third operation" $operation3

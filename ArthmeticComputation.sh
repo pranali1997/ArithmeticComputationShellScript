@@ -21,3 +21,8 @@ resultDictionary[1]=$operation2
 resultDictionary[2]=$operation3
 resultDictionary[3]=$operation4
 
+for i in ${!resultDictionary[@]}
+do
+	resultArray[$i]=${resultDictionary[$i]}
+done
+

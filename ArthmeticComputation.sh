@@ -26,8 +26,14 @@ do
 	resultArray[$i]=${resultDictionary[$i]}
 done
 
+echo "sort in descending order"
 for i in ${!resultDictionary[@]}
 do
 echo ${resultArray[$i]}
 done | sort -nr
 
+echo "sort in ascending order"
+for i in ${!resultDictionary[@]}
+do
+echo ${resultArray[$i]}
+done | sort -n

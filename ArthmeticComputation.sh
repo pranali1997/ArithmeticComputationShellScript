@@ -26,3 +26,4 @@ do
 	resultArray[$i]=${resultDictionary[$i]}
 done
 
+

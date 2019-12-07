@@ -27,13 +27,13 @@ do
 done
 
 echo "sort in descending order"
-for i in ${!resultDictionary[@]}
+for((i=0; i<${#resultArray[@]}; i++))
 do
 echo ${resultArray[$i]}
 done | sort -nr
 
 echo "sort in ascending order"
-for i in ${!resultDictionary[@]}
+for((i=0; i<${#resultArray[@]};i++))
 do
 echo ${resultArray[$i]}
 done | sort -n

@@ -26,4 +26,8 @@ do
 	resultArray[$i]=${resultDictionary[$i]}
 done
 
+for i in ${!resultDictionary[@]}
+do
+echo ${resultArray[$i]}
+done | sort -nr
 

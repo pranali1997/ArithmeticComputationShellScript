@@ -1,5 +1,6 @@
 #!/bin/bash -x
 
+declare -A resultDictionary
 echo "WELCOME TO ARITHMETIC COMPUTATION AND SORTING PROGRAM"
 read -p "Enter the first input: " a
 read -p "Enter the second input: " b
@@ -14,3 +15,10 @@ echo "first operation" $operation1
 echo "second operation" $operation2
 echo "third operation" $operation3
 echo "fourth operation" $operation4
+
+resultDictionary[0]=$operation1
+resultDictionary[1]=$operation2
+resultDictionary[2]=$operation3
+resultDictionary[3]=$operation4
+
+echo ${resultDictionary[@]}

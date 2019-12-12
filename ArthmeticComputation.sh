@@ -24,18 +24,19 @@ resultDictionary[1]=$operation2
 resultDictionary[2]=$operation3
 resultDictionary[3]=$operation4
 
+
 for i in ${!resultDictionary[@]}
 do
 	resultArray[$i]=${resultDictionary[$i]}
 done
 
-echo "sort in descending order"
+echo "Sorted result in descending order "
 for((i=0; i<${#resultArray[@]}; i++))
 do
 	echo ${resultArray[$i]}
 done | sort -nr
 
-echo "sort in ascending order"
+echo "Sorted result in ascending order"
 for((i=0; i<${#resultArray[@]};i++))
 do
 	echo ${resultArray[$i]}
